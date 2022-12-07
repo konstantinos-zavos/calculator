@@ -14,23 +14,22 @@ body {
 
 #calculator {
     width: 205px;
-    height: 320px;
+    height: 300px;
     border: 1px groove lightslategray;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-color: #1C1C1C; */
     background-color: black;
     color: white;
 
 }
 
 #calculator-display {
-    border: 1px groove lightslategray;
+    /* border: 1px groove lightslategray; */
     width: 165px;
     height: 100px;
     margin-top: 10px;
-    font-size: 30px;
+    font-size: 35px;
     display: flex;
     align-self: center;
     align-items: flex-end;
@@ -40,6 +39,7 @@ body {
 
 #calculator-body {
     margin: 15px;
+    margin-top: 1px;
 }
 
 button {
