@@ -29,4 +29,4 @@ function operate(operator, a, b) {
     } 
 }
 
-console.log(operate());
+// console.log(operate());
