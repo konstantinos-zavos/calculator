@@ -44,6 +44,8 @@ button {
     border-radius: 30px;
     background-color: #505050;
     color: white;
+    font-size: 15px;
+    font-weight: bold;
   
 }
 
@@ -52,3 +54,17 @@ button:hover {
     transition: 0.3s;    
 
 }
+
+#ac-sign {
+    background-color: #D4D4D2;
+    color: black;
+}
+
+#divide-sign,
+#multiply-sign,
+#plus-sign,
+#minus-sign,
+#equals-sign {
+    background-color: #FF9500;
+}
+
