@@ -91,8 +91,8 @@ function numberNine() {
     display.appendChild(content);
     }
 
-// function eraseLastNum() {
-//     const display = document.querySelector('#calculator-display');
-//     display.textContent -= 1;
-//     display.appendChild(content);
-// }
+function eraseAll() {
+    const display = document.querySelector('#calculator-display');
+    display.textContent = "" 
+    display.appendChild(content);
+}
