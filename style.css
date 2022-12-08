@@ -52,11 +52,12 @@ button {
     font-size: 15px;
     font-weight: bold;
     margin-top: 2px;
+    
 }
 
 button:hover {
     background-color: grey;
-    transition: 0.3s;    
+    transition: 0.3s;
 
 }
 
@@ -118,3 +119,5 @@ body {
     touch-action: pan-x pan-y;
     height: 100% 
   }
+
+  
