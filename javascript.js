@@ -120,7 +120,11 @@ function eraseAll() {
     display.textContent = "0" 
 }
 
-
+function eraseLast() {
+    const display = document.querySelector('#calculator-display')
+    const arrayDisplay =  display.textContent.toString().substring(0, display.textContent.length - 1);
+    return display.textContent = arrayDisplay
+}
 
 
 // const testButton = document.querySelector('#plus-sign');
