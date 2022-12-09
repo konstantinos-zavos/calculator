@@ -118,11 +118,14 @@ function numberNine() {
 function eraseAll() {
     const display = document.querySelector('#calculator-display');
     display.textContent = "0" 
+    operator = ""
+    storedNumberA = 0
+    storedNumberB = 0
 }
 
 function eraseLast() {
     const display = document.querySelector('#calculator-display')
-    if (display.textContent > 0) {
+    if (display.textContent > 0 || display.textContent < 0) {
     const arrayDisplay =  display.textContent.toString().substring(0, display.textContent.length - 1);
     return display.textContent = arrayDisplay
     } else if (display.textContent == 0) {
