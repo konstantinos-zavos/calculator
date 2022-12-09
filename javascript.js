@@ -95,5 +95,23 @@ const testDisplayA = document.querySelector('#calculator-display');
 
 function storeNumber() {
     let storedNumber = testDisplayA.textContent;
+    testDisplayA.textContent = "" 
     return console.log(storedNumber);
+}
+
+
+
+function equals(operator, a, b) {
+    a = prompt("What is the value of the first number?")
+    b = prompt("What is the value of the second number?")
+    operator = prompt("add, subtract, multiply or divide?")
+    if (operator == "add"){
+        return add(a, b)
+    } else if (operator == "subtract") {
+        return subtract(a, b)
+    } else if (operator == "multiply") {
+        return multiply(a, b)
+    } else if (operator == "divide") {
+        return divide(a, b)
+    } 
 }
