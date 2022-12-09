@@ -110,22 +110,40 @@ function addActive() {
     return operator = "add"
 }
 
+function subtractActive() {
+    storeNumberA()
+    return operator = "subtract"
+}
+
+function multiplyActive() {
+    storeNumberA()
+    return operator = "multiply"
+}
+
+function divideActive() {
+    storeNumberA()
+    return operator = "divide"
+}
+
 
 function add(storedNumberA, storedNumberB) {
     let sum = +storedNumberA + +storedNumberB
     return testDisplayA.textContent = sum
 }
 
-function subtract (a, b) {
-    return a - b
+function subtract(storedNumberA, storedNumberB) {
+    let sum = storedNumberA - storedNumberB
+    return testDisplayA.textContent = sum
 }
 
-function multiply(a, b) {
-    return a * b 
+function multiply(storedNumberA, storedNumberB) {
+    let sum = storedNumberA * storedNumberB
+    return testDisplayA.textContent = sum
 }
 
-function divide(a, b) {
-    return a / b
+function divide(storedNumberA, storedNumberB) {
+    let sum = storedNumberA / storedNumberB
+    return testDisplayA.textContent = sum
 }
 
 
@@ -137,10 +155,10 @@ function equals(operator, storedNumberA, storedNumberB) {
     if (operator == "add"){
         return add(storedNumberA, storedNumberB)
     } else if (operator == "subtract") {
-        return subtract(a, b)
+        return subtract(storedNumberA, storedNumberB)
     } else if (operator == "multiply") {
-        return multiply(a, b)
+        return multiply(storedNumberA, storedNumberB)
     } else if (operator == "divide") {
-        return divide(a, b)
+        return divide(storedNumberA, storedNumberB)
     } 
 }
