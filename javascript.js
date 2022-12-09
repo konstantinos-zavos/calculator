@@ -1,33 +1,18 @@
-function add(a, b) {
-    return +a + +b 
-}
 
-function subtract (a, b) {
-    return a - b
-}
-
-function multiply(a, b) {
-    return a * b 
-}
-
-function divide(a, b) {
-    return a / b
-}
-
-function operate(operator, a, b) {
-    a = prompt("What is the value of the first number?")
-    b = prompt("What is the value of the second number?")
-    operator = prompt("add, subtract, multiply or divide?")
-    if (operator == "add"){
-        return add(a, b)
-    } else if (operator == "subtract") {
-        return subtract(a, b)
-    } else if (operator == "multiply") {
-        return multiply(a, b)
-    } else if (operator == "divide") {
-        return divide(a, b)
-    } 
-}
+// function operate(operator, a, b) {
+//     a = prompt("What is the value of the first number?")
+//     b = prompt("What is the value of the second number?")
+//     operator = prompt("add, subtract, multiply or divide?")
+//     if (operator == "add"){
+//         return add(a, b)
+//     } else if (operator == "subtract") {
+//         return subtract(a, b)
+//     } else if (operator == "multiply") {
+//         return multiply(a, b)
+//     } else if (operator == "divide") {
+//         return divide(a, b)
+//     } 
+// }
 
 
 
@@ -93,20 +78,64 @@ function eraseAll() {
 const testDisplayA = document.querySelector('#calculator-display');
 
 
-function storeNumber() {
-    let storedNumber = testDisplayA.textContent;
+// function storeNumber() {
+//     let storedNumberA = testDisplayA.textContent;
+//     testDisplayA.textContent = "" 
+//     return console.log(storedNumberA);
+// }
+
+
+
+
+let operator = ""
+let storedNumberA = 0
+let storedNumberB = 0
+
+
+function storeNumberA() {
+    storedNumberA = testDisplayA.textContent;
     testDisplayA.textContent = "" 
-    return console.log(storedNumber);
+    return storedNumberA;
+}
+
+function storeNumberB() {
+    storedNumberB = testDisplayA.textContent;
+    testDisplayA.textContent = "" 
+    return storedNumberB;
+}
+
+
+function addActive() {
+    storeNumberA()
+    return operator = "add"
+}
+
+
+function add(storedNumberA, storedNumberB) {
+    let sum = +storedNumberA + +storedNumberB
+    return testDisplayA.textContent = sum
+}
+
+function subtract (a, b) {
+    return a - b
+}
+
+function multiply(a, b) {
+    return a * b 
+}
+
+function divide(a, b) {
+    return a / b
 }
 
 
 
-function equals(operator, a, b) {
-    a = prompt("What is the value of the first number?")
-    b = prompt("What is the value of the second number?")
-    operator = prompt("add, subtract, multiply or divide?")
+function equals(operator, storedNumberA, storedNumberB) {
+    storedNumberB = testDisplayA.textContent;
+    testDisplayA.textContent = "" 
+
     if (operator == "add"){
-        return add(a, b)
+        return add(storedNumberA, storedNumberB)
     } else if (operator == "subtract") {
         return subtract(a, b)
     } else if (operator == "multiply") {
