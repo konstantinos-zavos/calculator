@@ -122,8 +122,12 @@ function eraseAll() {
 
 function eraseLast() {
     const display = document.querySelector('#calculator-display')
+    if (display.textContent > 0) {
     const arrayDisplay =  display.textContent.toString().substring(0, display.textContent.length - 1);
     return display.textContent = arrayDisplay
+    } else if (display.textContent == 0) {
+        return display.textContent = "0"
+    }
 }
 
 
