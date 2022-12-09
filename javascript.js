@@ -18,57 +18,106 @@
 
 function numberZero() {
     const display = document.querySelector('#calculator-display');
-    display.textContent += '0';
+    if (display.textContent == 0) {
+        return false
+    } else {
+        display.textContent += 0
+    }
 }
 
 function numberOne() {
     const display = document.querySelector('#calculator-display');
+    if (display.textContent == 0) {
+        display.textContent = ""
+        display.textContent += '1';
+    }else {
     display.textContent += '1';
+    }
 }
 
 function numberTwo() {
     const display = document.querySelector('#calculator-display');
+    if (display.textContent == 0) {
+        display.textContent = ""
+        display.textContent += '2';
+    }else {
     display.textContent += '2';
+    }
     }
 
 function numberThree() {
     const display = document.querySelector('#calculator-display');
+    if (display.textContent == 0) {
+        display.textContent = ""
+        display.textContent += '3';
+    }else {
     display.textContent += '3';
+    }
     }
 
 function numberFour() {
     const display = document.querySelector('#calculator-display');
+    if (display.textContent == 0) {
+        display.textContent = ""
+        display.textContent += '4';
+    }else {
     display.textContent += '4';
+    }
     }
 
 function numberFive() {
     const display = document.querySelector('#calculator-display');
+    if (display.textContent == 0) {
+        display.textContent = ""
+        display.textContent += '5';
+    }else {
     display.textContent += '5';
+    }
     }
 
 function numberSix() {
     const display = document.querySelector('#calculator-display');
+    if (display.textContent == 0) {
+        display.textContent = ""
+        display.textContent += '6';
+    }else {
     display.textContent += '6';
+    }
     }
 
 function numberSeven() {
     const display = document.querySelector('#calculator-display');
+    if (display.textContent == 0) {
+        display.textContent = ""
+        display.textContent += '7';
+    }else {
     display.textContent += '7';
+    }
     }
 
 function numberEight() {
     const display = document.querySelector('#calculator-display');
+    if (display.textContent == 0) {
+        display.textContent = ""
+        display.textContent += '8';
+    }else {
     display.textContent += '8';
+    }
     }
 
 function numberNine() {
     const display = document.querySelector('#calculator-display');
+    if (display.textContent == 0) {
+        display.textContent = ""
+        display.textContent += '9';
+    }else {
     display.textContent += '9';
+    }
     }
 
 function eraseAll() {
     const display = document.querySelector('#calculator-display');
-    display.textContent = "" 
+    display.textContent = "0" 
 }
 
 
