@@ -135,8 +135,16 @@ function storeNumberB() {
 
 
 function addActive() {
+    if (storedNumberA != 0) {
+    storedNumberB = display.textContent; 
+    let sum = +storedNumberA + +storedNumberB
+    sum = Math.round((sum + Number.EPSILON) * 100) / 100;
+    display.textContent = ""
+    return storedNumberA = sum
+} else {
     storeNumberA()
     return operator = "add"
+}
 }
 
 function subtractActive() {
@@ -195,3 +203,14 @@ function equals(operator, storedNumberA, storedNumberB) {
         return divide(storedNumberA, storedNumberB)
     } 
 }
+
+
+// input #1 --> vazo noumero sto screen
+// input #2 --> operator (+) --> to noumero sto screen paei sto var1
+// input #3 --> screen is clear now --> vazw allo noumero sto screen
+// input #4 --> pataw ena allo operator gia paradigma pali plus
+//  thelw to display na apothikeftei sto temporary variable 2  
+// na ginei h praksi me ton prohgoumeno operator
+// to apotelesma na apothikeftei ws variable 1
+// twra to display number tha apothikeftei sto variable 2
+// repeat
