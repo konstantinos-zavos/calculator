@@ -1,23 +1,4 @@
-
-// function operate(operator, a, b) {
-//     a = prompt("What is the value of the first number?")
-//     b = prompt("What is the value of the second number?")
-//     operator = prompt("add, subtract, multiply or divide?")
-//     if (operator == "add"){
-//         return add(a, b)
-//     } else if (operator == "subtract") {
-//         return subtract(a, b)
-//     } else if (operator == "multiply") {
-//         return multiply(a, b)
-//     } else if (operator == "divide") {
-//         return divide(a, b)
-//     } 
-// }
-
-
-
 function numberZero() {
-    const display = document.querySelector('#calculator-display');
     if (display.textContent == 0) {
         return false
     } else {
@@ -26,7 +7,6 @@ function numberZero() {
 }
 
 function numberOne() {
-    const display = document.querySelector('#calculator-display');
     if (display.textContent == 0) {
         display.textContent = ""
         display.textContent += '1';
@@ -36,7 +16,6 @@ function numberOne() {
 }
 
 function numberTwo() {
-    const display = document.querySelector('#calculator-display');
     if (display.textContent == 0) {
         display.textContent = ""
         display.textContent += '2';
@@ -46,7 +25,6 @@ function numberTwo() {
     }
 
 function numberThree() {
-    const display = document.querySelector('#calculator-display');
     if (display.textContent == 0) {
         display.textContent = ""
         display.textContent += '3';
@@ -56,7 +34,6 @@ function numberThree() {
     }
 
 function numberFour() {
-    const display = document.querySelector('#calculator-display');
     if (display.textContent == 0) {
         display.textContent = ""
         display.textContent += '4';
@@ -66,7 +43,6 @@ function numberFour() {
     }
 
 function numberFive() {
-    const display = document.querySelector('#calculator-display');
     if (display.textContent == 0) {
         display.textContent = ""
         display.textContent += '5';
@@ -76,7 +52,6 @@ function numberFive() {
     }
 
 function numberSix() {
-    const display = document.querySelector('#calculator-display');
     if (display.textContent == 0) {
         display.textContent = ""
         display.textContent += '6';
@@ -86,7 +61,6 @@ function numberSix() {
     }
 
 function numberSeven() {
-    const display = document.querySelector('#calculator-display');
     if (display.textContent == 0) {
         display.textContent = ""
         display.textContent += '7';
@@ -96,7 +70,6 @@ function numberSeven() {
     }
 
 function numberEight() {
-    const display = document.querySelector('#calculator-display');
     if (display.textContent == 0) {
         display.textContent = ""
         display.textContent += '8';
@@ -106,7 +79,6 @@ function numberEight() {
     }
 
 function numberNine() {
-    const display = document.querySelector('#calculator-display');
     if (display.textContent == 0) {
         display.textContent = ""
         display.textContent += '9';
@@ -116,19 +88,16 @@ function numberNine() {
     }
 
 
-//  CHECK THIS CODE AT HOME <-----
 
-    function decimal() {
-        const display = document.querySelector('#calculator-display');
-        if (display.textContent % 1 === 0) {
-            display.textContent += '.';
-        }else {
-        return false
-        }
-        }
+function decimal() {
+    if (display.textContent % 1 === 0) {
+        display.textContent += '.';
+    }else {
+    return false
+    }
+    }
 
 function eraseAll() {
-    const display = document.querySelector('#calculator-display');
     display.textContent = "0" 
     operator = ""
     storedNumberA = 0
@@ -136,7 +105,6 @@ function eraseAll() {
 }
 
 function eraseLast() {
-    const display = document.querySelector('#calculator-display')
     if (display.textContent > 0 || display.textContent < 0) {
     const arrayDisplay =  display.textContent.toString().substring(0, display.textContent.length - 1);
     return display.textContent = arrayDisplay
@@ -146,33 +114,22 @@ function eraseLast() {
 }
 
 
-// const testButton = document.querySelector('#plus-sign');
-const testDisplayA = document.querySelector('#calculator-display');
 
-
-// function storeNumber() {
-//     let storedNumberA = testDisplayA.textContent;
-//     testDisplayA.textContent = "" 
-//     return console.log(storedNumberA);
-// }
-
-
-
-
+const display = document.querySelector('#calculator-display');
 let operator = ""
 let storedNumberA = 0
 let storedNumberB = 0
 
 
 function storeNumberA() {
-    storedNumberA = testDisplayA.textContent;
-    testDisplayA.textContent = "" 
+    storedNumberA = display.textContent;
+    display.textContent = "" 
     return storedNumberA;
 }
 
 function storeNumberB() {
-    storedNumberB = testDisplayA.textContent;
-    testDisplayA.textContent = "" 
+    storedNumberB = display.textContent;
+    display.textContent = "" 
     return storedNumberB;
 }
 
@@ -201,32 +158,32 @@ function divideActive() {
 function add(storedNumberA, storedNumberB) {
     let sum = +storedNumberA + +storedNumberB
     sum = Math.round((sum + Number.EPSILON) * 100) / 100;
-    return testDisplayA.textContent = sum
+    return display.textContent = sum
 }
 
 function subtract(storedNumberA, storedNumberB) {
     let sum = storedNumberA - storedNumberB
     sum = Math.round((sum + Number.EPSILON) * 100) / 100;
-    return testDisplayA.textContent = sum
+    return display.textContent = sum
 }
 
 function multiply(storedNumberA, storedNumberB) {
     let sum = storedNumberA * storedNumberB
     sum = Math.round((sum + Number.EPSILON) * 100) / 100;
-    return testDisplayA.textContent = sum
+    return display.textContent = sum
 }
 
 function divide(storedNumberA, storedNumberB) {
     let sum = storedNumberA / storedNumberB
     sum = Math.round((sum + Number.EPSILON) * 100) / 100;
-    return testDisplayA.textContent = sum
+    return display.textContent = sum
 }
 
 
 
 function equals(operator, storedNumberA, storedNumberB) {
-    storedNumberB = testDisplayA.textContent;
-    testDisplayA.textContent = "" 
+    storedNumberB = display.textContent;
+    display.textContent = "" 
 
     if (operator == "add"){
         return add(storedNumberA, storedNumberB)
