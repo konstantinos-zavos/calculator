@@ -118,14 +118,14 @@ function numberNine() {
 
 //  CHECK THIS CODE AT HOME <-----
 
-    // function decimal() {
-    //     const display = document.querySelector('#calculator-display');
-    //     if (display.textContent  % 1 != 0 ) {
-    //         display.textContent += '.';
-    //     }else {
-    //     return false
-    //     }
-    //     }
+    function decimal() {
+        const display = document.querySelector('#calculator-display');
+        if (display.textContent % 1 === 0) {
+            display.textContent += '.';
+        }else {
+        return false
+        }
+        }
 
 function eraseAll() {
     const display = document.querySelector('#calculator-display');
