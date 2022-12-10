@@ -102,6 +102,7 @@ function eraseAll() {
     operator = ""
     storedNumberA = 0
     storedNumberB = 0
+    stored.textContent = ""
 }
 
 function eraseLast() {
@@ -116,6 +117,7 @@ function eraseLast() {
 
 
 const display = document.querySelector('#calculator-display');
+const stored = document.querySelector('#stored');
 let operator = ""
 let storedNumberA = 0
 let storedNumberB = 0
@@ -140,6 +142,7 @@ function addActive() {
     let sum = +storedNumberA + +storedNumberB
     sum = Math.round((sum + Number.EPSILON) * 100) / 100;
     display.textContent = ""
+    stored.textContent = `Memory:${sum}`
     return storedNumberA = sum
 } else {
     storeNumberA()
@@ -192,7 +195,7 @@ function divide(storedNumberA, storedNumberB) {
 function equals(operator, storedNumberA, storedNumberB) {
     storedNumberB = display.textContent;
     display.textContent = "" 
-
+    stored.textContent = ""
     if (operator == "add"){
         return add(storedNumberA, storedNumberB)
     } else if (operator == "subtract") {
