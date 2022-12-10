@@ -200,21 +200,25 @@ function divideActive() {
 
 function add(storedNumberA, storedNumberB) {
     let sum = +storedNumberA + +storedNumberB
+    sum = Math.round((sum + Number.EPSILON) * 100) / 100;
     return testDisplayA.textContent = sum
 }
 
 function subtract(storedNumberA, storedNumberB) {
     let sum = storedNumberA - storedNumberB
+    sum = Math.round((sum + Number.EPSILON) * 100) / 100;
     return testDisplayA.textContent = sum
 }
 
 function multiply(storedNumberA, storedNumberB) {
     let sum = storedNumberA * storedNumberB
+    sum = Math.round((sum + Number.EPSILON) * 100) / 100;
     return testDisplayA.textContent = sum
 }
 
 function divide(storedNumberA, storedNumberB) {
     let sum = storedNumberA / storedNumberB
+    sum = Math.round((sum + Number.EPSILON) * 100) / 100;
     return testDisplayA.textContent = sum
 }
 
