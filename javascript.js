@@ -172,7 +172,10 @@ function addActive() {
             storedNumberB = display.textContent;
             return operator = "add"
         } 
-}else {
+} else if (storedNumberB == '') {
+    display.textContent = storedNumberA
+    stored.textContent = ""
+}  else {
     storeNumberA()
     stored.textContent += `${storedNumberA} +`
     return operator = "add"
@@ -181,7 +184,7 @@ function addActive() {
 
 function subtractActive() {
     storedNumberB = display.textContent;
-    if (storedNumberA != 0 && storedNumberB != 0) {
+    if (storedNumberA != 0 && storedNumberB != 0 && storedNumberB != '') {
         if (operator == "add"){
             let sum = +storedNumberA + +storedNumberB
             sum = Math.round((sum + Number.EPSILON) * 100) / 100;
@@ -215,7 +218,10 @@ function subtractActive() {
             storedNumberB = display.textContent;
             return operator = "subtract"
         } 
-    } else {
+    } else if (storedNumberB == '') {
+        display.textContent = storedNumberA
+        stored.textContent = ""
+    }  else {
     storeNumberA()
     stored.textContent += `${storedNumberA} -`
     return operator = "subtract"
@@ -272,8 +278,49 @@ function multiplyActive() {
 }
 
 function divideActive() {
+    storedNumberB = display.textContent;
+    if (storedNumberA != 0 && storedNumberB != 0) {
+        if (operator == "add"){
+            let sum = +storedNumberA + +storedNumberB
+            sum = Math.round((sum + Number.EPSILON) * 100) / 100;
+            display.textContent = ""
+            stored.textContent += ` ${storedNumberB} /`
+            storedNumberA = sum
+            storedNumberB = display.textContent;
+            return operator = "divide"
+        } else if (operator == "subtract") {
+            let sum = storedNumberA - storedNumberB
+            sum = Math.round((sum + Number.EPSILON) * 100) / 100;
+            display.textContent = ""
+            stored.textContent += ` ${storedNumberB} /`
+            storedNumberA = sum
+            storedNumberB = display.textContent;
+            return operator = "divide"
+        } else if (operator == "multiply") {
+            let sum = storedNumberA * storedNumberB
+            sum = Math.round((sum + Number.EPSILON) * 100) / 100;
+            display.textContent = ""
+            stored.textContent += ` ${storedNumberB} /`
+            storedNumberA = sum
+            storedNumberB = display.textContent;
+            return operator = "divide"
+        } else if (operator == "divide") {
+            let sum = storedNumberA / storedNumberB
+            sum = Math.round((sum + Number.EPSILON) * 100) / 100;
+            display.textContent = ""
+            stored.textContent += ` ${storedNumberB} /`
+            storedNumberA = sum
+            storedNumberB = display.textContent;
+            return operator = "divide"
+        } 
+} else if (storedNumberB == '') {
+    display.textContent = storedNumberA
+    stored.textContent = ""
+}  else {
     storeNumberA()
+    stored.textContent += `${storedNumberA} /`
     return operator = "divide"
+}
 }
 
 
