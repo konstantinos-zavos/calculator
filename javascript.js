@@ -143,6 +143,7 @@ function addActive() {
     sum = Math.round((sum + Number.EPSILON) * 100) / 100;
     display.textContent = ""
     stored.textContent += ` ${storedNumberB}`
+    operator = "add"
     return storedNumberA = sum
 } else if ( storedNumberB != 0) {
     storedNumberB = display.textContent; 
@@ -150,6 +151,7 @@ function addActive() {
     sum = Math.round((sum + Number.EPSILON) * 100) / 100;
     display.textContent = ""
     stored.textContent += ` + ${storedNumberB}`
+    operator = "add"
     return storedNumberA = sum
 }else {
     storeNumberA()
@@ -159,8 +161,46 @@ function addActive() {
 }
 
 function subtractActive() {
+    storedNumberB = display.textContent;
+    if (storedNumberA != 0 && storedNumberB != 0) {
+        if (operator == "add"){
+            let sum = +storedNumberA + +storedNumberB
+            sum = Math.round((sum + Number.EPSILON) * 100) / 100;
+            display.textContent = ""
+            stored.textContent += ` ${storedNumberB} -`
+            storedNumberA = sum
+            storedNumberB = display.textContent;
+            return operator = "subtract"
+        } else if (operator == "subtract") {
+            let sum = storedNumberA - storedNumberB
+            sum = Math.round((sum + Number.EPSILON) * 100) / 100;
+            display.textContent = ""
+            stored.textContent += ` ${storedNumberB} -`
+            storedNumberA = sum
+            storedNumberB = display.textContent;
+            return operator = "subtract"
+        } else if (operator == "multiply") {
+            let sum = storedNumberA * storedNumberB
+            sum = Math.round((sum + Number.EPSILON) * 100) / 100;
+            display.textContent = ""
+            stored.textContent += ` ${storedNumberB} -`
+            storedNumberA = sum
+            storedNumberB = display.textContent;
+            return operator = "subtract"
+        } else if (operator == "divide") {
+            let sum = storedNumberA / storedNumberB
+            sum = Math.round((sum + Number.EPSILON) * 100) / 100;
+            display.textContent = ""
+            stored.textContent += ` ${storedNumberB} -`
+            storedNumberA = sum
+            storedNumberB = display.textContent;
+            return operator = "subtract"
+        } 
+    } else {
     storeNumberA()
+    stored.textContent += `${storedNumberA} -`
     return operator = "subtract"
+}
 }
 
 function multiplyActive() {
