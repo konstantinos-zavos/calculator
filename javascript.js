@@ -1,5 +1,7 @@
 function numberZero() {
-    if (display.textContent == 0) {
+    if (display.textContent == "") {
+        return display.textContent = 0
+    } else if (display.textContent == 0) {
         return false
     } else {
         display.textContent += 0
