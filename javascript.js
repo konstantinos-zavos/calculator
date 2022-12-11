@@ -137,15 +137,23 @@ function storeNumberB() {
 
 
 function addActive() {
-    if (storedNumberA != 0) {
+    if (storedNumberA != 0 && storedNumberB == 0)  {
     storedNumberB = display.textContent; 
     let sum = +storedNumberA + +storedNumberB
     sum = Math.round((sum + Number.EPSILON) * 100) / 100;
     display.textContent = ""
-    stored.textContent = `Memory:${sum}`
+    stored.textContent += ` ${storedNumberB}`
     return storedNumberA = sum
-} else {
+} else if ( storedNumberB != 0) {
+    storedNumberB = display.textContent; 
+    let sum = +storedNumberA + +storedNumberB
+    sum = Math.round((sum + Number.EPSILON) * 100) / 100;
+    display.textContent = ""
+    stored.textContent += ` + ${storedNumberB}`
+    return storedNumberA = sum
+}else {
     storeNumberA()
+    stored.textContent += `${storedNumberA} +`
     return operator = "add"
 }
 }
