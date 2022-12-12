@@ -329,6 +329,7 @@ function divideActive() {
 function add(storedNumberA, storedNumberB) {
     let sum = +storedNumberA + +storedNumberB
     sum = Math.round((sum + Number.EPSILON) * 100) / 100;
+    operator = "finished";
     return display.textContent = sum
 }
 
@@ -355,7 +356,15 @@ function divide(storedNumberA, storedNumberB) {
 function equals(operator, storedNumberA, storedNumberB) {
     if (storedNumberA == "" || storedNumberB == "" && operator == "") {
         alert("ERROR 01 - Please use an operator first before using this button")
-    } else {
+    } else if (operator == "finished") {
+        let confirmAction = confirm("Calculations are complete. Do you want to reset?");
+        if (confirmAction) {
+            eraseAll()
+        } else {
+          alert("Action canceled");
+        }
+      } 
+    else {
     storedNumberB = display.textContent;
     display.textContent = "" 
     stored.textContent += ` ${storedNumberB} =`
@@ -386,4 +395,13 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
+}
+
+
+function problem() {
+if (display.textContent.includes('=')) {
+    alert("help?")
+} else  {
+    return true
+}
 }
