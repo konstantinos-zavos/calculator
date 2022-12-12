@@ -10,17 +10,31 @@
     <meta name="viewport" content="width=device-width, user-scalable=no" />
 </head>
 <body>
+    <div id="myModal" class="modal">  
+        <div class="modal-content">
+        <span class="close">&times;</span>
+            <h3>Thank you for using my calculator! This project was created by Konstantinos Zavos.
+                <br>
+                <br>
+                <a href="https://github.com/koszav/calculator" style="text-decoration: none;">Github</a>
+            </h>
 
+      </div>
+    
+    </div>
     <div id="calculator">
         <div id="stored"></div>
         <div id="calculator-display">
             0   
         </div>
 
+        
+
         <div id="calculator-body">
             <button id="ac-sign" onclick="eraseAll()">AC</button>
             <button id="ac-sign" onclick="eraseLast()">C</button>
-            <button id="ac-sign">:)</button>
+            <button id="myBtn">:)</button>
+            
             <button id="divide-sign" onclick="divideActive()">÷</button>
             <button id="number-seven" onclick="numberSeven()">7</button>
             <button id="number-eight" onclick="numberEight()">8</button>
