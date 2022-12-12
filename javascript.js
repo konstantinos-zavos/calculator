@@ -238,7 +238,7 @@ function multiplyActive() {
             sum = Math.round((sum + Number.EPSILON) * 100) / 100;
             display.textContent = ""
             stored.textContent += ` ${storedNumberB} *`
-            storedNumberA = sum
+            
             storedNumberB = display.textContent;
             return operator = "multiply"
         } else if (operator == "subtract") {
@@ -329,7 +329,8 @@ function divideActive() {
 function add(storedNumberA, storedNumberB) {
     let sum = +storedNumberA + +storedNumberB
     sum = Math.round((sum + Number.EPSILON) * 100) / 100;
-    operator = "finished";
+    console.log(storedNumberA)
+    console.log(storedNumberB)
     return display.textContent = sum
 }
 
@@ -356,15 +357,7 @@ function divide(storedNumberA, storedNumberB) {
 function equals(operator, storedNumberA, storedNumberB) {
     if (storedNumberA == "" || storedNumberB == "" && operator == "") {
         alert("ERROR 01 - Please use an operator first before using this button")
-    } else if (operator == "finished") {
-        let confirmAction = confirm("Calculations are complete. Do you want to reset?");
-        if (confirmAction) {
-            eraseAll()
-        } else {
-          alert("Action canceled");
-        }
-      } 
-    else {
+    } else {
     storedNumberB = display.textContent;
     display.textContent = "" 
     stored.textContent += ` ${storedNumberB} =`
@@ -397,11 +390,11 @@ window.onclick = function(event) {
   }
 }
 
-
-function problem() {
-if (display.textContent.includes('=')) {
-    alert("help?")
-} else  {
-    return true
-}
-}
+// else if (operator == "finished") {
+//     let confirmAction = confirm("Calculations are complete. Do you want to reset?");
+//     if (confirmAction) {
+//         eraseAll()
+//     } else {
+//       alert("Action canceled");
+//     }
+//   } 
