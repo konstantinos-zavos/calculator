@@ -550,12 +550,7 @@ function equals(operator, storedNumberA, storedNumberB) {
     } else {
     storedNumberB = display.textContent;
     display.textContent = ""
-    if (stored.textContent.length >= 21) {
-        stored.textContent = "Memory Full - Operations hidden";
-        // document.getElementById('calculator-display').setAttribute('style', 'font-size: 15px; color: blue; padding-bottom: 5px') 
-    } else {
     stored.textContent += ` ${storedNumberB} =`
-    }
     if (operator == "add"){
         equalsPressedOnce = 1
         return add(storedNumberA, storedNumberB)
@@ -608,14 +603,12 @@ function ifFullThenError() {
 
 function displayFullPrevent() {
     if (display.textContent.length < 9) {
-        document.getElementById('calculator-display').setAttribute('style', 'font-size: 35px; color: grey') 
+        document.getElementById('calculator-display').setAttribute('style', 'font-size: 18px; color: grey') 
         } else if (display.textContent.length < 11) {
-        document.getElementById('calculator-display').setAttribute('style', 'font-size: 29px; color: blue') 
+        document.getElementById('calculator-display').setAttribute('style', 'font-size: 25px; color: blue') 
         } else if (display.textContent.length < 15) {
-        document.getElementById('calculator-display').setAttribute('style', 'font-size: 21px; color: cyan') 
+        document.getElementById('calculator-display').setAttribute('style', 'font-size: 18px; color: cyan') 
         } else if (display.textContent.length < 20) {
         document.getElementById('calculator-display').setAttribute('style', 'font-size: 15px; color: white; padding-bottom: 5px;') 
-        } else {
-        document.getElementById('calculator-display').setAttribute('style', 'font-size: 15px; color: blue; padding-bottom: 5px') 
         }
 }
