@@ -545,7 +545,7 @@ function equals(operator, storedNumberA, storedNumberB) {
     } else {
     storedNumberB = display.textContent;
     display.textContent = ""
-    if (stored.textContent.length >= 25) {
+    if (stored.textContent.length >= 21) {
         stored.textContent = "Memory Full - Operations hidden";
         document.getElementById('calculator-display').setAttribute('style', 'font-size: 15px; color: blue; padding-bottom: 5px') 
     } else {
