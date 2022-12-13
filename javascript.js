@@ -330,6 +330,7 @@ function addActive() {
         } 
 } else if (storedNumberB == '') {
     display.textContent = storedNumberA
+    document.getElementById('calculator-display').setAttribute('style', 'font-size: 15px; color: white; padding-bottom: 5px;') 
     stored.textContent = ""
 }  else {
     storeNumberA()
@@ -383,6 +384,7 @@ function subtractActive() {
         } 
     } else if (storedNumberB == '') {
         display.textContent = storedNumberA
+        document.getElementById('calculator-display').setAttribute('style', 'font-size: 15px; color: white; padding-bottom: 5px;') 
         stored.textContent = ""
     }  else {
     storeNumberA()
@@ -437,6 +439,7 @@ function multiplyActive() {
     } else if (storedNumberB == '') {
         display.textContent = storedNumberA
         stored.textContent = ""
+        document.getElementById('calculator-display').setAttribute('style', 'font-size: 15px; color: white; padding-bottom: 5px;') 
         return alert("What are you doing step-calculator?")
         // this is a "non-professional" way to fix a bug I was facing here. You can consider this an easter egg. 
         // You can totally ignore the alert msg and consider this "fixed"
@@ -492,6 +495,7 @@ function divideActive() {
         } 
 } else if (storedNumberB == '') {
     display.textContent = storedNumberA
+    document.getElementById('calculator-display').setAttribute('style', 'font-size: 15px; color: white; padding-bottom: 5px;') 
     stored.textContent = ""
 }  else {
     storeNumberA()
