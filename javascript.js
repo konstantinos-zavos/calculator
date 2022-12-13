@@ -424,11 +424,12 @@ window.onclick = function(event) {
   }
 }
 
-// else if (operator == "finished") {
+
+// else if (equalsPressedOnce == 1) {
 //     let confirmAction = confirm("Calculations are complete. Do you want to reset?");
 //     if (confirmAction) {
-//         eraseAll()
+//     eraseAll()
 //     } else {
-//       alert("Action canceled");
+//     alert("Action canceled");
 //     }
-//   } 
+// } 
