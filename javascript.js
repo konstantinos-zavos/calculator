@@ -337,6 +337,7 @@ function addActive() {
 }
 
 function subtractActive() {
+    ifFullThenError() 
     storedNumberB = display.textContent;
     if (storedNumberA != 0 && storedNumberB != 0 && storedNumberB != '') {
         if (operator == "add" && equalsPressedOnce != 1){
@@ -389,6 +390,7 @@ function subtractActive() {
 }
 
 function multiplyActive() {
+    ifFullThenError() 
     storedNumberB = display.textContent;
     if (storedNumberA != 0 && storedNumberB != 0 && storedNumberB != '') {
         if (operator == "add" && equalsPressedOnce != 1){
@@ -444,6 +446,7 @@ function multiplyActive() {
 }
 
 function divideActive() {
+    ifFullThenError() 
     storedNumberB = display.textContent;
     if (storedNumberA != 0 && storedNumberB != 0) {
         if (operator == "add" && equalsPressedOnce != 1){
