@@ -13,7 +13,11 @@ function numberOne() {
         display.textContent = ""
         display.textContent += '1';
     }else {
-    display.textContent += '1';
+        if (display.textContent.length < 9) {
+        display.textContent += '1';
+        } else {
+        return false
+}
     }
 }
 
