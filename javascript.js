@@ -243,6 +243,7 @@ function multiplyActive() {
             sum = Math.round((sum + Number.EPSILON) * 100) / 100;
             display.textContent = ""
             stored.textContent += ` ${storedNumberB} *`
+            storedNumberA = sum
             storedNumberB = display.textContent;
             return operator = "multiply"
         } else if (operator == "subtract") {
