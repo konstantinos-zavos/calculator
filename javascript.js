@@ -544,8 +544,13 @@ function equals(operator, storedNumberA, storedNumberB) {
         }
     } else {
     storedNumberB = display.textContent;
-    display.textContent = "" 
+    display.textContent = ""
+    if (stored.textContent.length >= 25) {
+        stored.textContent = "Memory Full - Operations hidden";
+        document.getElementById('calculator-display').setAttribute('style', 'font-size: 15px; color: blue; padding-bottom: 5px') 
+    } else {
     stored.textContent += ` ${storedNumberB} =`
+    }
     if (operator == "add"){
         equalsPressedOnce = 1
         return add(storedNumberA, storedNumberB)
@@ -588,3 +593,4 @@ window.onclick = function(event) {
 //     alert("Action canceled");
 //     }
 // } 
+
