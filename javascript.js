@@ -5,7 +5,7 @@ function numberZero() {
         return false
     } else {
         if (display.textContent.length < 9) {
-            document.getElementById('calculator-display').setAttribute('style',) 
+            document.getElementById('calculator-display').setAttribute('style', '') 
             display.textContent += '0';
             } else if (display.textContent.length < 11) {
             document.getElementById('calculator-display').setAttribute('style', 'font-size: 29px;') 
@@ -30,7 +30,7 @@ function numberOne() {
         display.textContent += '1';
     }else {
         if (display.textContent.length < 9) {
-        document.getElementById('calculator-display').setAttribute('style',) 
+        document.getElementById('calculator-display').setAttribute('style', '') 
         display.textContent += '1';
         } else if (display.textContent.length < 11) {
         document.getElementById('calculator-display').setAttribute('style', 'font-size: 30px;') 
