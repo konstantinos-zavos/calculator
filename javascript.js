@@ -537,6 +537,7 @@ let equalsPressedOnce = 0
 
 
 function equals(operator, storedNumberA, storedNumberB) {
+    displayFullPrevent()
     if (storedNumberA == "" || storedNumberB == "" && operator == "") {
         alert("ERROR 01 - Please use an operator first before using this button")
     } else if (equalsPressedOnce == 1) {
@@ -551,7 +552,7 @@ function equals(operator, storedNumberA, storedNumberB) {
     display.textContent = ""
     if (stored.textContent.length >= 21) {
         stored.textContent = "Memory Full - Operations hidden";
-        document.getElementById('calculator-display').setAttribute('style', 'font-size: 15px; color: blue; padding-bottom: 5px') 
+        // document.getElementById('calculator-display').setAttribute('style', 'font-size: 15px; color: blue; padding-bottom: 5px') 
     } else {
     stored.textContent += ` ${storedNumberB} =`
     }
@@ -603,4 +604,18 @@ function ifFullThenError() {
         document.getElementById('stored').setAttribute('style', 'font-size: 8px; color: white; padding-bottom: 5px') 
 
     }
+}
+
+function displayFullPrevent() {
+    if (display.textContent.length < 9) {
+        document.getElementById('calculator-display').setAttribute('style', 'font-size: 35px; color: grey') 
+        } else if (display.textContent.length < 11) {
+        document.getElementById('calculator-display').setAttribute('style', 'font-size: 29px; color: blue') 
+        } else if (display.textContent.length < 15) {
+        document.getElementById('calculator-display').setAttribute('style', 'font-size: 21px; color: cyan') 
+        } else if (display.textContent.length < 20) {
+        document.getElementById('calculator-display').setAttribute('style', 'font-size: 15px; color: white; padding-bottom: 5px;') 
+        } else {
+        document.getElementById('calculator-display').setAttribute('style', 'font-size: 15px; color: blue; padding-bottom: 5px') 
+        }
 }
