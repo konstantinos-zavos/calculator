@@ -141,7 +141,7 @@ function storeNumberB() {
 function addActive() {
     storedNumberB = display.textContent;
     if (storedNumberA != 0 && storedNumberB != 0) {
-        if (operator == "add"){
+        if (operator == "add" && equalsPressedOnce == 0){
             let sum = +storedNumberA + +storedNumberB
             sum = Math.round((sum + Number.EPSILON) * 100) / 100;
             display.textContent = ""
@@ -149,7 +149,12 @@ function addActive() {
             storedNumberA = sum
             storedNumberB = display.textContent;
             return operator = "add"
-        } else if (operator == "subtract") {
+        }else if (equalsPressedOnce == 1) {
+            storedNumberA = display.textContent
+            display.textContent = ""
+            stored.textContent += ` ${storedNumberA} +`
+            return operator = "add"
+        }  else if (operator == "subtract") {
             let sum = storedNumberA - storedNumberB
             sum = Math.round((sum + Number.EPSILON) * 100) / 100;
             display.textContent = ""
@@ -238,7 +243,6 @@ function multiplyActive() {
             sum = Math.round((sum + Number.EPSILON) * 100) / 100;
             display.textContent = ""
             stored.textContent += ` ${storedNumberB} *`
-            
             storedNumberB = display.textContent;
             return operator = "multiply"
         } else if (operator == "subtract") {
@@ -354,6 +358,9 @@ function divide(storedNumberA, storedNumberB) {
 
 
 
+let equalsPressedOnce = 0
+
+
 function equals(operator, storedNumberA, storedNumberB) {
     if (storedNumberA == "" || storedNumberB == "" && operator == "") {
         alert("ERROR 01 - Please use an operator first before using this button")
@@ -362,6 +369,7 @@ function equals(operator, storedNumberA, storedNumberB) {
     display.textContent = "" 
     stored.textContent += ` ${storedNumberB} =`
     if (operator == "add"){
+        equalsPressedOnce = 1
         return add(storedNumberA, storedNumberB)
     } else if (operator == "subtract") {
         return subtract(storedNumberA, storedNumberB)
