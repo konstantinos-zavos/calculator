@@ -8,10 +8,10 @@ function numberZero() {
             document.getElementById('calculator-display').setAttribute('style', 'color: red') 
             display.textContent += '0';
             } else if (display.textContent.length < 11) {
-            document.getElementById('calculator-display').setAttribute('style', 'font-size: 30px; color: blue') 
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 29px; color: blue') 
             display.textContent += '0';
             } else if (display.textContent.length < 15) {
-            document.getElementById('calculator-display').setAttribute('style', 'font-size: 22px; color: blue') 
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 21px; color: blue') 
             display.textContent += '0';
             } else if (display.textContent.length < 20) {
             document.getElementById('calculator-display').setAttribute('style', 'font-size: 15px; color: white; padding-bottom: 5px;') 
@@ -56,10 +56,10 @@ function numberTwo() {
             document.getElementById('calculator-display').setAttribute('style', 'color: red') 
             display.textContent += '2';
             } else if (display.textContent.length < 11) {
-            document.getElementById('calculator-display').setAttribute('style', 'font-size: 30px; color: blue') 
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 29px; color: blue') 
             display.textContent += '2';
             } else if (display.textContent.length < 15) {
-            document.getElementById('calculator-display').setAttribute('style', 'font-size: 22px; color: blue') 
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 21px; color: blue') 
             display.textContent += '2';
             } else if (display.textContent.length < 20) {
             document.getElementById('calculator-display').setAttribute('style', 'font-size: 15px; color: white; padding-bottom: 5px;') 
@@ -79,10 +79,10 @@ function numberThree() {
             document.getElementById('calculator-display').setAttribute('style', 'color: red') 
             display.textContent += '3';
             } else if (display.textContent.length < 11) {
-            document.getElementById('calculator-display').setAttribute('style', 'font-size: 30px; color: blue') 
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 29px; color: blue') 
             display.textContent += '3';
             } else if (display.textContent.length < 15) {
-            document.getElementById('calculator-display').setAttribute('style', 'font-size: 22px; color: blue') 
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 21px; color: blue') 
             display.textContent += '3';
             } else if (display.textContent.length < 20) {
             document.getElementById('calculator-display').setAttribute('style', 'font-size: 15px; color: white; padding-bottom: 5px;') 
@@ -102,10 +102,10 @@ function numberFour() {
             document.getElementById('calculator-display').setAttribute('style', 'color: red') 
             display.textContent += '4';
             } else if (display.textContent.length < 11) {
-            document.getElementById('calculator-display').setAttribute('style', 'font-size: 30px; color: blue') 
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 29px; color: blue') 
             display.textContent += '4';
             } else if (display.textContent.length < 15) {
-            document.getElementById('calculator-display').setAttribute('style', 'font-size: 22px; color: blue') 
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 21px; color: blue') 
             display.textContent += '4';
             } else if (display.textContent.length < 20) {
             document.getElementById('calculator-display').setAttribute('style', 'font-size: 15px; color: white; padding-bottom: 5px;') 
@@ -125,10 +125,10 @@ function numberFive() {
             document.getElementById('calculator-display').setAttribute('style', 'color: red') 
             display.textContent += '5';
             } else if (display.textContent.length < 11) {
-            document.getElementById('calculator-display').setAttribute('style', 'font-size: 30px; color: blue') 
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 29px; color: blue') 
             display.textContent += '5';
             } else if (display.textContent.length < 15) {
-            document.getElementById('calculator-display').setAttribute('style', 'font-size: 22px; color: blue') 
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 21px; color: blue') 
             display.textContent += '5';
             } else if (display.textContent.length < 20) {
             document.getElementById('calculator-display').setAttribute('style', 'font-size: 15px; color: white; padding-bottom: 5px;') 
@@ -148,10 +148,10 @@ function numberSix() {
             document.getElementById('calculator-display').setAttribute('style', 'color: red') 
             display.textContent += '6';
             } else if (display.textContent.length < 11) {
-            document.getElementById('calculator-display').setAttribute('style', 'font-size: 30px; color: blue') 
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 29px; color: blue') 
             display.textContent += '6';
             } else if (display.textContent.length < 15) {
-            document.getElementById('calculator-display').setAttribute('style', 'font-size: 22px; color: blue') 
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 21px; color: blue') 
             display.textContent += '6';
             } else if (display.textContent.length < 20) {
             document.getElementById('calculator-display').setAttribute('style', 'font-size: 15px; color: white; padding-bottom: 5px;') 
@@ -171,10 +171,10 @@ function numberSeven() {
             document.getElementById('calculator-display').setAttribute('style', 'color: red') 
             display.textContent += '7';
             } else if (display.textContent.length < 11) {
-            document.getElementById('calculator-display').setAttribute('style', 'font-size: 30px; color: blue') 
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 29px; color: blue') 
             display.textContent += '7';
             } else if (display.textContent.length < 15) {
-            document.getElementById('calculator-display').setAttribute('style', 'font-size: 22px; color: blue') 
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 21px; color: blue') 
             display.textContent += '7';
             } else if (display.textContent.length < 20) {
             document.getElementById('calculator-display').setAttribute('style', 'font-size: 15px; color: white; padding-bottom: 5px;') 
@@ -194,10 +194,10 @@ function numberEight() {
             document.getElementById('calculator-display').setAttribute('style', 'color: red') 
             display.textContent += '8';
             } else if (display.textContent.length < 11) {
-            document.getElementById('calculator-display').setAttribute('style', 'font-size: 30px; color: blue') 
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 29px; color: blue') 
             display.textContent += '8';
             } else if (display.textContent.length < 15) {
-            document.getElementById('calculator-display').setAttribute('style', 'font-size: 22px; color: blue') 
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 21px; color: blue') 
             display.textContent += '8';
             } else if (display.textContent.length < 20) {
             document.getElementById('calculator-display').setAttribute('style', 'font-size: 15px; color: white; padding-bottom: 5px;') 
@@ -217,10 +217,10 @@ function numberNine() {
             document.getElementById('calculator-display').setAttribute('style', 'color: red') 
             display.textContent += '9';
             } else if (display.textContent.length < 11) {
-            document.getElementById('calculator-display').setAttribute('style', 'font-size: 30px; color: blue') 
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 29px; color: blue') 
             display.textContent += '9';
             } else if (display.textContent.length < 15) {
-            document.getElementById('calculator-display').setAttribute('style', 'font-size: 22px; color: blue') 
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 21px; color: blue') 
             display.textContent += '9';
             } else if (display.textContent.length < 20) {
             document.getElementById('calculator-display').setAttribute('style', 'font-size: 15px; color: white; padding-bottom: 5px;') 
