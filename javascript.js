@@ -5,13 +5,13 @@ function numberZero() {
         return false
     } else {
         if (display.textContent.length < 9) {
-            document.getElementById('calculator-display').setAttribute('style', 'color: red') 
+            document.getElementById('calculator-display').setAttribute('style',) 
             display.textContent += '0';
             } else if (display.textContent.length < 11) {
-            document.getElementById('calculator-display').setAttribute('style', 'font-size: 29px; color: blue') 
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 29px;') 
             display.textContent += '0';
             } else if (display.textContent.length < 15) {
-            document.getElementById('calculator-display').setAttribute('style', 'font-size: 21px; color: blue') 
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 21px;') 
             display.textContent += '0';
             } else if (display.textContent.length < 20) {
             document.getElementById('calculator-display').setAttribute('style', 'font-size: 15px; color: white; padding-bottom: 5px;') 
@@ -30,13 +30,13 @@ function numberOne() {
         display.textContent += '1';
     }else {
         if (display.textContent.length < 9) {
-        document.getElementById('calculator-display').setAttribute('style', 'color: red') 
+        document.getElementById('calculator-display').setAttribute('style',) 
         display.textContent += '1';
         } else if (display.textContent.length < 11) {
-        document.getElementById('calculator-display').setAttribute('style', 'font-size: 30px; color: blue') 
+        document.getElementById('calculator-display').setAttribute('style', 'font-size: 30px;') 
         display.textContent += '1';
         } else if (display.textContent.length < 15) {
-        document.getElementById('calculator-display').setAttribute('style', 'font-size: 22px; color: blue') 
+        document.getElementById('calculator-display').setAttribute('style', 'font-size: 22px;') 
         display.textContent += '1';
         } else if (display.textContent.length < 20) {
         document.getElementById('calculator-display').setAttribute('style', 'font-size: 15px; color: white; padding-bottom: 5px;') 
@@ -53,13 +53,13 @@ function numberTwo() {
         display.textContent += '2';
     }else {
         if (display.textContent.length < 9) {
-            document.getElementById('calculator-display').setAttribute('style', 'color: red') 
+            document.getElementById('calculator-display').setAttribute('style', '') 
             display.textContent += '2';
             } else if (display.textContent.length < 11) {
-            document.getElementById('calculator-display').setAttribute('style', 'font-size: 29px; color: blue') 
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 29px;') 
             display.textContent += '2';
             } else if (display.textContent.length < 15) {
-            document.getElementById('calculator-display').setAttribute('style', 'font-size: 21px; color: blue') 
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 21px;') 
             display.textContent += '2';
             } else if (display.textContent.length < 20) {
             document.getElementById('calculator-display').setAttribute('style', 'font-size: 15px; color: white; padding-bottom: 5px;') 
@@ -76,13 +76,13 @@ function numberThree() {
         display.textContent += '3';
     }else {
         if (display.textContent.length < 9) {
-            document.getElementById('calculator-display').setAttribute('style', 'color: red') 
+            document.getElementById('calculator-display').setAttribute('style', '') 
             display.textContent += '3';
             } else if (display.textContent.length < 11) {
-            document.getElementById('calculator-display').setAttribute('style', 'font-size: 29px; color: blue') 
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 29px;') 
             display.textContent += '3';
             } else if (display.textContent.length < 15) {
-            document.getElementById('calculator-display').setAttribute('style', 'font-size: 21px; color: blue') 
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 21px;') 
             display.textContent += '3';
             } else if (display.textContent.length < 20) {
             document.getElementById('calculator-display').setAttribute('style', 'font-size: 15px; color: white; padding-bottom: 5px;') 
@@ -99,13 +99,13 @@ function numberFour() {
         display.textContent += '4';
     }else {
         if (display.textContent.length < 9) {
-            document.getElementById('calculator-display').setAttribute('style', 'color: red') 
+            document.getElementById('calculator-display').setAttribute('style', '') 
             display.textContent += '4';
             } else if (display.textContent.length < 11) {
-            document.getElementById('calculator-display').setAttribute('style', 'font-size: 29px; color: blue') 
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 29px;') 
             display.textContent += '4';
             } else if (display.textContent.length < 15) {
-            document.getElementById('calculator-display').setAttribute('style', 'font-size: 21px; color: blue') 
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 21px;') 
             display.textContent += '4';
             } else if (display.textContent.length < 20) {
             document.getElementById('calculator-display').setAttribute('style', 'font-size: 15px; color: white; padding-bottom: 5px;') 
@@ -122,13 +122,13 @@ function numberFive() {
         display.textContent += '5';
     }else {
         if (display.textContent.length < 9) {
-            document.getElementById('calculator-display').setAttribute('style', 'color: red') 
+            document.getElementById('calculator-display').setAttribute('style', '') 
             display.textContent += '5';
             } else if (display.textContent.length < 11) {
-            document.getElementById('calculator-display').setAttribute('style', 'font-size: 29px; color: blue') 
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 29px;') 
             display.textContent += '5';
             } else if (display.textContent.length < 15) {
-            document.getElementById('calculator-display').setAttribute('style', 'font-size: 21px; color: blue') 
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 21px;') 
             display.textContent += '5';
             } else if (display.textContent.length < 20) {
             document.getElementById('calculator-display').setAttribute('style', 'font-size: 15px; color: white; padding-bottom: 5px;') 
@@ -145,13 +145,13 @@ function numberSix() {
         display.textContent += '6';
     }else {
         if (display.textContent.length < 9) {
-            document.getElementById('calculator-display').setAttribute('style', 'color: red') 
+            document.getElementById('calculator-display').setAttribute('style', '') 
             display.textContent += '6';
             } else if (display.textContent.length < 11) {
-            document.getElementById('calculator-display').setAttribute('style', 'font-size: 29px; color: blue') 
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 29px;') 
             display.textContent += '6';
             } else if (display.textContent.length < 15) {
-            document.getElementById('calculator-display').setAttribute('style', 'font-size: 21px; color: blue') 
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 21px;') 
             display.textContent += '6';
             } else if (display.textContent.length < 20) {
             document.getElementById('calculator-display').setAttribute('style', 'font-size: 15px; color: white; padding-bottom: 5px;') 
@@ -168,13 +168,13 @@ function numberSeven() {
         display.textContent += '7';
     }else {
         if (display.textContent.length < 9) {
-            document.getElementById('calculator-display').setAttribute('style', 'color: red') 
+            document.getElementById('calculator-display').setAttribute('style', '') 
             display.textContent += '7';
             } else if (display.textContent.length < 11) {
-            document.getElementById('calculator-display').setAttribute('style', 'font-size: 29px; color: blue') 
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 29px;') 
             display.textContent += '7';
             } else if (display.textContent.length < 15) {
-            document.getElementById('calculator-display').setAttribute('style', 'font-size: 21px; color: blue') 
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 21px;') 
             display.textContent += '7';
             } else if (display.textContent.length < 20) {
             document.getElementById('calculator-display').setAttribute('style', 'font-size: 15px; color: white; padding-bottom: 5px;') 
@@ -191,13 +191,13 @@ function numberEight() {
         display.textContent += '8';
     }else {
         if (display.textContent.length < 9) {
-            document.getElementById('calculator-display').setAttribute('style', 'color: red') 
+            document.getElementById('calculator-display').setAttribute('style', '') 
             display.textContent += '8';
             } else if (display.textContent.length < 11) {
-            document.getElementById('calculator-display').setAttribute('style', 'font-size: 29px; color: blue') 
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 29px;') 
             display.textContent += '8';
             } else if (display.textContent.length < 15) {
-            document.getElementById('calculator-display').setAttribute('style', 'font-size: 21px; color: blue') 
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 21px;') 
             display.textContent += '8';
             } else if (display.textContent.length < 20) {
             document.getElementById('calculator-display').setAttribute('style', 'font-size: 15px; color: white; padding-bottom: 5px;') 
@@ -214,13 +214,13 @@ function numberNine() {
         display.textContent += '9';
     }else {
         if (display.textContent.length < 9) {
-            document.getElementById('calculator-display').setAttribute('style', 'color: red') 
+            document.getElementById('calculator-display').setAttribute('style', '') 
             display.textContent += '9';
             } else if (display.textContent.length < 11) {
-            document.getElementById('calculator-display').setAttribute('style', 'font-size: 29px; color: blue') 
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 29px;') 
             display.textContent += '9';
             } else if (display.textContent.length < 15) {
-            document.getElementById('calculator-display').setAttribute('style', 'font-size: 21px; color: blue') 
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 21px;') 
             display.textContent += '9';
             } else if (display.textContent.length < 20) {
             document.getElementById('calculator-display').setAttribute('style', 'font-size: 15px; color: white; padding-bottom: 5px;') 
@@ -595,29 +595,29 @@ window.onclick = function(event) {
 
 function ifFullThenError() {
     if (stored.textContent.length < 5){
-        document.getElementById('stored').setAttribute('style', 'font-size: 15px; color: red; padding-bottom: 5px') 
+        document.getElementById('stored').setAttribute('style', 'font-size: 15p padding-bottom: 5px') 
     }  else if (stored.textContent.length < 10){
-        document.getElementById('stored').setAttribute('style', 'font-size: 10px; color: yellow; padding-bottom: 5px') 
+        document.getElementById('stored').setAttribute('style', 'font-size: 10px;  padding-bottom: 5px') 
     }  else if (stored.textContent.length < 30){
-        document.getElementById('stored').setAttribute('style', 'font-size: 9px; color: green; padding-bottom: 5px') 
+        document.getElementById('stored').setAttribute('style', 'font-size: 9px; padding-bottom: 5px') 
     }else {
         stored.textContent = "..."
-        document.getElementById('stored').setAttribute('style', 'font-size: 8px; color: white; padding-bottom: 5px') 
+        document.getElementById('stored').setAttribute('style', 'font-size: 8px; padding-bottom: 5px') 
 
     }
 }
 
 function displayFullPrevent() {
     if (stored.textContent.length < 9) {
-        document.getElementById('calculator-display').setAttribute('style', 'font-size: 35px; color: grey') 
+        document.getElementById('calculator-display').setAttribute('style', 'font-size: 35px;') 
         } else if (stored.textContent.length < 11) {
-        document.getElementById('calculator-display').setAttribute('style', 'font-size: 25px; color: blue') 
+        document.getElementById('calculator-display').setAttribute('style', 'font-size: 25px;') 
         } else if (stored.textContent.length < 15) {
-        document.getElementById('calculator-display').setAttribute('style', 'font-size: 18px; color: cyan') 
+        document.getElementById('calculator-display').setAttribute('style', 'font-size: 18px;') 
         } else if (stored.textContent.length < 20) {
-        document.getElementById('calculator-display').setAttribute('style', 'font-size: 15px; color: white; padding-bottom: 5px;') 
+        document.getElementById('calculator-display').setAttribute('style', 'font-size: 15px; padding-bottom: 5px;') 
         } else  {
-        document.getElementById('calculator-display').setAttribute('style', 'font-size: 15px; color: white; padding-bottom: 5px;') 
+        document.getElementById('calculator-display').setAttribute('style', 'font-size: 15px; padding-bottom: 5px;') 
         }
     }
 
