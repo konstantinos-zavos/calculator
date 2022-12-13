@@ -141,7 +141,7 @@ function storeNumberB() {
 function addActive() {
     storedNumberB = display.textContent;
     if (storedNumberA != 0 && storedNumberB != 0) {
-        if (operator == "add" && equalsPressedOnce == 0){
+        if (operator == "add" && equalsPressedOnce != 1){
             let sum = +storedNumberA + +storedNumberB
             sum = Math.round((sum + Number.EPSILON) * 100) / 100;
             display.textContent = ""
@@ -192,7 +192,7 @@ function addActive() {
 function subtractActive() {
     storedNumberB = display.textContent;
     if (storedNumberA != 0 && storedNumberB != 0 && storedNumberB != '') {
-        if (operator == "add"){
+        if (operator == "add" && equalsPressedOnce != 1){
             let sum = +storedNumberA + +storedNumberB
             sum = Math.round((sum + Number.EPSILON) * 100) / 100;
             display.textContent = ""
@@ -200,7 +200,12 @@ function subtractActive() {
             storedNumberA = sum
             storedNumberB = display.textContent;
             return operator = "subtract"
-        } else if (operator == "subtract") {
+        } else if (equalsPressedOnce == 1) {
+            storedNumberA = display.textContent
+            display.textContent = ""
+            stored.textContent += ` ${storedNumberA} -`
+            return operator = "subtract"
+        }  else if (operator == "subtract") {
             let sum = storedNumberA - storedNumberB
             sum = Math.round((sum + Number.EPSILON) * 100) / 100;
             display.textContent = ""
@@ -238,7 +243,7 @@ function subtractActive() {
 function multiplyActive() {
     storedNumberB = display.textContent;
     if (storedNumberA != 0 && storedNumberB != 0 && storedNumberB != '') {
-        if (operator == "add"){
+        if (operator == "add" && equalsPressedOnce != 1){
             let sum = +storedNumberA + +storedNumberB
             sum = Math.round((sum + Number.EPSILON) * 100) / 100;
             display.textContent = ""
@@ -246,7 +251,12 @@ function multiplyActive() {
             storedNumberA = sum
             storedNumberB = display.textContent;
             return operator = "multiply"
-        } else if (operator == "subtract") {
+        } else if (equalsPressedOnce == 1) {
+            storedNumberA = display.textContent
+            display.textContent = ""
+            stored.textContent += ` ${storedNumberA} *`
+            return operator = "multiply"
+        }  else if (operator == "subtract") {
             let sum = storedNumberA - storedNumberB
             sum = Math.round((sum + Number.EPSILON) * 100) / 100;
             display.textContent = ""
@@ -287,7 +297,7 @@ function multiplyActive() {
 function divideActive() {
     storedNumberB = display.textContent;
     if (storedNumberA != 0 && storedNumberB != 0) {
-        if (operator == "add"){
+        if (operator == "add" && equalsPressedOnce != 1){
             let sum = +storedNumberA + +storedNumberB
             sum = Math.round((sum + Number.EPSILON) * 100) / 100;
             display.textContent = ""
@@ -295,7 +305,12 @@ function divideActive() {
             storedNumberA = sum
             storedNumberB = display.textContent;
             return operator = "divide"
-        } else if (operator == "subtract") {
+        } else if (equalsPressedOnce == 1) {
+            storedNumberA = display.textContent
+            display.textContent = ""
+            stored.textContent += ` ${storedNumberA} /`
+            return operator = "divide"
+        }   else if (operator == "subtract") {
             let sum = storedNumberA - storedNumberB
             sum = Math.round((sum + Number.EPSILON) * 100) / 100;
             display.textContent = ""
