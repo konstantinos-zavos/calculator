@@ -284,6 +284,7 @@ function storeNumberB() {
 
 
 function addActive() {
+    ifFullThenError()
     storedNumberB = display.textContent;
     if (storedNumberA != 0 && storedNumberB != 0 ) {
         if (operator == "add" && equalsPressedOnce != 1 ){
@@ -585,12 +586,18 @@ window.onclick = function(event) {
 }
 
 
-// else if (equalsPressedOnce == 1) {
-//     let confirmAction = confirm("Calculations are complete. Do you want to reset?");
-//     if (confirmAction) {
-//     eraseAll()
-//     } else {
-//     alert("Action canceled");
-//     }
-// } 
 
+
+function ifFullThenError() {
+    if (stored.textContent.length < 5){
+        document.getElementById('stored').setAttribute('style', 'font-size: 15px; color: red; padding-bottom: 5px') 
+    }  else if (stored.textContent.length < 10){
+        document.getElementById('stored').setAttribute('style', 'font-size: 10px; color: yellow; padding-bottom: 5px') 
+    }  else if (stored.textContent.length < 30){
+        document.getElementById('stored').setAttribute('style', 'font-size: 9px; color: green; padding-bottom: 5px') 
+    }else {
+        stored.textContent = "..."
+        document.getElementById('stored').setAttribute('style', 'font-size: 8px; color: white; padding-bottom: 5px') 
+
+    }
+}
