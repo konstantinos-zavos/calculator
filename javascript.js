@@ -8,12 +8,16 @@ function numberZero() {
     }
 }
 
+
+
 function numberOne() {
     if (display.textContent == 0) {
         display.textContent = ""
         display.textContent += '1';
     }else {
         if (display.textContent.length < 9) {
+            // me auto edw tha boreis na allazeis to megethos apo to taxt analoga me ton arithmo ton noumerwn san to IOS
+            document.getElementById('calculator-display').setAttribute('style', 'color: red') 
         display.textContent += '1';
         } else {
         return false
@@ -110,6 +114,8 @@ function eraseAll() {
     storedNumberB = 0
     equalsPressedOnce = 0
     stored.textContent = ""
+    // Allakse auto gia na kaneis ta fonts pali sto original megethos
+    document.getElementById('calculator-display').setAttribute('style', 'color: white');
 }
 
 function eraseLast() {
