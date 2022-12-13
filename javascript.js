@@ -154,6 +154,7 @@ function addActive() {
             storedNumberA = display.textContent
             display.textContent = ""
             stored.textContent += ` ${storedNumberA} +`
+            equalsPressedOnce = 0
             return operator = "add"
         }  else if (operator == "subtract" && equalsPressedOnce != 1) {
             let sum = storedNumberA - storedNumberB
@@ -205,6 +206,7 @@ function subtractActive() {
             storedNumberA = display.textContent
             display.textContent = ""
             stored.textContent += ` ${storedNumberA} -`
+            equalsPressedOnce = 0
             return operator = "subtract"
         }  else if (operator == "subtract" && equalsPressedOnce != 1) {
             let sum = storedNumberA - storedNumberB
@@ -256,6 +258,7 @@ function multiplyActive() {
             storedNumberA = display.textContent
             display.textContent = ""
             stored.textContent += ` ${storedNumberA} *`
+            equalsPressedOnce = 0
             return operator = "multiply"
         }  else if (operator == "subtract" && equalsPressedOnce != 1) {
             let sum = storedNumberA - storedNumberB
@@ -310,6 +313,7 @@ function divideActive() {
             storedNumberA = display.textContent
             display.textContent = ""
             stored.textContent += ` ${storedNumberA} /`
+            equalsPressedOnce = 0
             return operator = "divide"
         }   else if (operator == "subtract" && equalsPressedOnce != 1) {
             let sum = storedNumberA - storedNumberB
@@ -387,6 +391,13 @@ let equalsPressedOnce = 0
 function equals(operator, storedNumberA, storedNumberB) {
     if (storedNumberA == "" || storedNumberB == "" && operator == "") {
         alert("ERROR 01 - Please use an operator first before using this button")
+    } else if (equalsPressedOnce == 1) {
+        let confirmAction = confirm("Calculations are complete. Do you want to reset?");
+        if (confirmAction) {
+        eraseAll()
+        } else {
+        alert("Action canceled");
+        }
     } else {
     storedNumberB = display.textContent;
     display.textContent = "" 
