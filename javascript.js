@@ -4,8 +4,22 @@ function numberZero() {
     } else if (display.textContent == 0) {
         return false
     } else {
-        display.textContent += 0
-    }
+        if (display.textContent.length < 9) {
+            document.getElementById('calculator-display').setAttribute('style', 'color: red') 
+            display.textContent += '0';
+            } else if (display.textContent.length < 11) {
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 30px; color: blue') 
+            display.textContent += '0';
+            } else if (display.textContent.length < 15) {
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 22px; color: blue') 
+            display.textContent += '0';
+            } else if (display.textContent.length < 20) {
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 15px; color: white; padding-bottom: 5px;') 
+            display.textContent += '0';
+            } else {
+            return false
+            }    
+        }
 }
 
 
@@ -16,8 +30,6 @@ function numberOne() {
         display.textContent += '1';
     }else {
         if (display.textContent.length < 9) {
-            // me auto edw tha boreis na allazeis to megethos apo to taxt analoga me ton arithmo ton noumerwn san to IOS
-        // document.getElementById('calculator-display').setAttribute('style', 'font-size: 15px;') 
         document.getElementById('calculator-display').setAttribute('style', 'color: red') 
         display.textContent += '1';
         } else if (display.textContent.length < 11) {
@@ -27,12 +39,11 @@ function numberOne() {
         document.getElementById('calculator-display').setAttribute('style', 'font-size: 22px; color: blue') 
         display.textContent += '1';
         } else if (display.textContent.length < 20) {
-            document.getElementById('calculator-display').setAttribute('style', 'font-size: 15px; color: white; padding-bottom: 5px;') 
-            display.textContent += '1';
-            }
-        else {
+        document.getElementById('calculator-display').setAttribute('style', 'font-size: 15px; color: white; padding-bottom: 5px;') 
+        display.textContent += '1';
+        } else {
         return false
-}
+        }
     }
 }
 
@@ -41,8 +52,22 @@ function numberTwo() {
         display.textContent = ""
         display.textContent += '2';
     }else {
-    display.textContent += '2';
-    }
+        if (display.textContent.length < 9) {
+            document.getElementById('calculator-display').setAttribute('style', 'color: red') 
+            display.textContent += '2';
+            } else if (display.textContent.length < 11) {
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 30px; color: blue') 
+            display.textContent += '2';
+            } else if (display.textContent.length < 15) {
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 22px; color: blue') 
+            display.textContent += '2';
+            } else if (display.textContent.length < 20) {
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 15px; color: white; padding-bottom: 5px;') 
+            display.textContent += '2';
+            } else {
+            return false
+            }    
+        }
     }
 
 function numberThree() {
@@ -50,8 +75,22 @@ function numberThree() {
         display.textContent = ""
         display.textContent += '3';
     }else {
-    display.textContent += '3';
-    }
+        if (display.textContent.length < 9) {
+            document.getElementById('calculator-display').setAttribute('style', 'color: red') 
+            display.textContent += '3';
+            } else if (display.textContent.length < 11) {
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 30px; color: blue') 
+            display.textContent += '3';
+            } else if (display.textContent.length < 15) {
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 22px; color: blue') 
+            display.textContent += '3';
+            } else if (display.textContent.length < 20) {
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 15px; color: white; padding-bottom: 5px;') 
+            display.textContent += '3';
+            } else {
+            return false
+            }    
+        }
     }
 
 function numberFour() {
@@ -59,8 +98,22 @@ function numberFour() {
         display.textContent = ""
         display.textContent += '4';
     }else {
-    display.textContent += '4';
-    }
+        if (display.textContent.length < 9) {
+            document.getElementById('calculator-display').setAttribute('style', 'color: red') 
+            display.textContent += '4';
+            } else if (display.textContent.length < 11) {
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 30px; color: blue') 
+            display.textContent += '4';
+            } else if (display.textContent.length < 15) {
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 22px; color: blue') 
+            display.textContent += '4';
+            } else if (display.textContent.length < 20) {
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 15px; color: white; padding-bottom: 5px;') 
+            display.textContent += '4';
+            } else {
+            return false
+            }    
+        }
     }
 
 function numberFive() {
@@ -68,8 +121,22 @@ function numberFive() {
         display.textContent = ""
         display.textContent += '5';
     }else {
-    display.textContent += '5';
-    }
+        if (display.textContent.length < 9) {
+            document.getElementById('calculator-display').setAttribute('style', 'color: red') 
+            display.textContent += '5';
+            } else if (display.textContent.length < 11) {
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 30px; color: blue') 
+            display.textContent += '5';
+            } else if (display.textContent.length < 15) {
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 22px; color: blue') 
+            display.textContent += '5';
+            } else if (display.textContent.length < 20) {
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 15px; color: white; padding-bottom: 5px;') 
+            display.textContent += '5';
+            } else {
+            return false
+            }    
+        }
     }
 
 function numberSix() {
@@ -77,8 +144,22 @@ function numberSix() {
         display.textContent = ""
         display.textContent += '6';
     }else {
-    display.textContent += '6';
-    }
+        if (display.textContent.length < 9) {
+            document.getElementById('calculator-display').setAttribute('style', 'color: red') 
+            display.textContent += '6';
+            } else if (display.textContent.length < 11) {
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 30px; color: blue') 
+            display.textContent += '6';
+            } else if (display.textContent.length < 15) {
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 22px; color: blue') 
+            display.textContent += '6';
+            } else if (display.textContent.length < 20) {
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 15px; color: white; padding-bottom: 5px;') 
+            display.textContent += '6';
+            } else {
+            return false
+            }    
+        }
     }
 
 function numberSeven() {
@@ -86,8 +167,22 @@ function numberSeven() {
         display.textContent = ""
         display.textContent += '7';
     }else {
-    display.textContent += '7';
-    }
+        if (display.textContent.length < 9) {
+            document.getElementById('calculator-display').setAttribute('style', 'color: red') 
+            display.textContent += '7';
+            } else if (display.textContent.length < 11) {
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 30px; color: blue') 
+            display.textContent += '7';
+            } else if (display.textContent.length < 15) {
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 22px; color: blue') 
+            display.textContent += '7';
+            } else if (display.textContent.length < 20) {
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 15px; color: white; padding-bottom: 5px;') 
+            display.textContent += '7';
+            } else {
+            return false
+            }    
+        }
     }
 
 function numberEight() {
@@ -95,8 +190,22 @@ function numberEight() {
         display.textContent = ""
         display.textContent += '8';
     }else {
-    display.textContent += '8';
-    }
+        if (display.textContent.length < 9) {
+            document.getElementById('calculator-display').setAttribute('style', 'color: red') 
+            display.textContent += '8';
+            } else if (display.textContent.length < 11) {
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 30px; color: blue') 
+            display.textContent += '8';
+            } else if (display.textContent.length < 15) {
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 22px; color: blue') 
+            display.textContent += '8';
+            } else if (display.textContent.length < 20) {
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 15px; color: white; padding-bottom: 5px;') 
+            display.textContent += '8';
+            } else {
+            return false
+            }    
+        }
     }
 
 function numberNine() {
@@ -104,8 +213,22 @@ function numberNine() {
         display.textContent = ""
         display.textContent += '9';
     }else {
-    display.textContent += '9';
-    }
+        if (display.textContent.length < 9) {
+            document.getElementById('calculator-display').setAttribute('style', 'color: red') 
+            display.textContent += '9';
+            } else if (display.textContent.length < 11) {
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 30px; color: blue') 
+            display.textContent += '9';
+            } else if (display.textContent.length < 15) {
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 22px; color: blue') 
+            display.textContent += '9';
+            } else if (display.textContent.length < 20) {
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 15px; color: white; padding-bottom: 5px;') 
+            display.textContent += '9';
+            } else {
+            return false
+            }    
+        }
     }
 
 
