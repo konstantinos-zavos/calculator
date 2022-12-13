@@ -17,9 +17,20 @@ function numberOne() {
     }else {
         if (display.textContent.length < 9) {
             // me auto edw tha boreis na allazeis to megethos apo to taxt analoga me ton arithmo ton noumerwn san to IOS
-            document.getElementById('calculator-display').setAttribute('style', 'color: red') 
+        // document.getElementById('calculator-display').setAttribute('style', 'font-size: 15px;') 
+        document.getElementById('calculator-display').setAttribute('style', 'color: red') 
         display.textContent += '1';
-        } else {
+        } else if (display.textContent.length < 11) {
+        document.getElementById('calculator-display').setAttribute('style', 'font-size: 30px; color: blue') 
+        display.textContent += '1';
+        } else if (display.textContent.length < 15) {
+        document.getElementById('calculator-display').setAttribute('style', 'font-size: 22px; color: blue') 
+        display.textContent += '1';
+        } else if (display.textContent.length < 20) {
+            document.getElementById('calculator-display').setAttribute('style', 'font-size: 15px; color: white; padding-bottom: 5px;') 
+            display.textContent += '1';
+            }
+        else {
         return false
 }
     }
