@@ -395,10 +395,13 @@ function equals(operator, storedNumberA, storedNumberB) {
         equalsPressedOnce = 1
         return add(storedNumberA, storedNumberB)
     } else if (operator == "subtract") {
+        equalsPressedOnce = 1
         return subtract(storedNumberA, storedNumberB)
     } else if (operator == "multiply") {
+        equalsPressedOnce = 1
         return multiply(storedNumberA, storedNumberB)
     } else if (operator == "divide") {
+        equalsPressedOnce = 1
         return divide(storedNumberA, storedNumberB)
     } 
 }
